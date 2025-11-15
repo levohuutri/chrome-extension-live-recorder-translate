@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="popup">
+    <div class="row">
+      <label>Language</label>
+      <select id="lang">
+        <option value="englist">English</option>
+        <option value="japanese">JP</option>
+        <option value="vietnamese">Vietnamese</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>API Keys</label>
+      <textarea id="apikeys" rows="3" placeholder="Enter Gemini API Keys (one per line)"></textarea>
+    </div>
+    <div class="row">
+      <label>Conversation Style</label>
+      <textarea id="conversationStyle" rows="2" placeholder="e.g., formal, friendly, professional, casual, educational..."></textarea>
+    </div>
+    <div class="row">
+      <label>Chunk Time</label>
+      <select id="chunkTime">
+        <option value="3">3s</option>
+        <option value="5">5s</option>
+        <option value="10" selected>10s</option>
+        <option value="15">15s</option>
+        <option value="20">20s</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>Note Time</label>
+      <select id="noteTime">
+        <option value="15">15s</option>
+        <option value="30" selected>30s</option>
+        <option value="60">60s</option>
+        <option value="120">120s</option>
+      </select>
+    </div>
+    <div class="row">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
